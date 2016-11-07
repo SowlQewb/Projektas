@@ -1,0 +1,20 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+.titulinis {
+  height: 200px;
+  width: 1300px;
+  background-color: #C8D7DC;
+
+}
+.logo {
+  position: relative;
+  height: 100px;
+  width: auto;
+  float: left;
+}
+.meniu {
+  position: relative;
+  float: right;
+}
