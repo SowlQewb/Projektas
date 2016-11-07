@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="assets/style/css.css" />
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <style>
+        #toolbar {
+            position: absolute;
+            top: 200px;
+            width: 100%;
+            height: 50px;
+            border: 15px dotted #ff9800;
+            /*background-color: #ff9800;*/
+        }
+        #myCanvas {
+              position: absolute;
+              display: block;
+              top: 0;
+              left: 0;
+              z-index: 0;
+              }
+        .naujaKlase {
+          font-size: 20px;
+          color: #0000ff;
+        }
+        .naujaKlaseG {
+          font-size: 20px;
+          color: yellow;
+        }
+        .naujaKlaseZ {
+          font-size: 20px;
+          color: green;
+        }
+        .naujaKlaseR {
+          font-size: 20px;
+          color: red;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://npmcdn.com/particlesjs@1.0.2/dist/particles.min.js"></script>
+    <script src="path/to/particles.min.js"></script>
+</head>
+
+<body>
+  <canvas id="myCanvas"></canvas>
+    <div id="toolbar"></div>
+    <img id="headerImg" src="https://pixabay.com/static/uploads/photo/2016/07/12/08/18/tree-1511604_960_720.png" alt="header" />
+    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+    <hr>
+    <p>Donec id mi sed orci lobortis rutrum. Nam suscipit augue eu felis congue malesuada. In dui dolor, ultrices ut dictum non, mollis at sapien.</p>
+    <div id="superDiv">
+        <p id="child">Integer auctor magna et orci iaculis maximus. Quisque euismod lectus quam, eget fringilla nulla ornare a. In hac habitasse platea dictumst. Proin venenatis pretium tincidunt. Morbi rhoncus vel neque vel porttitor.</p>
+        <p>Sed id dolor quis mauris iaculis varius. Curabitur a nulla nec tortor cursus fringilla a et neque. Phasellus ligula velit, vestibulum ac dui sed, lacinia euismod mi.</p>
+        <p>Sed id dolor quis mauris iaculis varius. Curabitur a nulla nec tortor cursus fringilla a et neque. Phasellus ligula velit, vestibulum ac dui sed, lacinia euismod mi.</p>
+        <p>Sed id dolor quis mauris iaculis varius. Curabitur a nulla nec tortor cursus fringilla a et neque. Phasellus ligula velit, vestibulum ac dui sed, lacinia euismod mi.</p>
+    </div>
+    <h2>Mauris id faucibus elit, a efficitur sem</h2>
+    <img src="https://pixabay.com/static/uploads/photo/2016/09/12/18/27/parsley-1665402_960_720.jpg" alt="broccoli" width="300px" />
+    <img src="https://pixabay.com/static/uploads/photo/2016/06/25/12/48/fashion-1478810_960_720.jpg" alt="bag" width="300px" />
+    <img src="https://pixabay.com/static/uploads/photo/2016/08/29/22/29/cobweb-1629374_960_720.jpg" alt="flower" width="300px" />
+    <br>
+    <br>
+    <button>Buy now</button>
+
+    <a id="linkas" href="http://eloquentjavascript.net/"><h2>Spausk čia</h2></a>
+
+    <table border="1">
+        <tr>
+            <td>viens</td>
+            <td>viens</td>
+            <td>viens</td>
+        </tr>
+        <tr>
+            <td>du</td>
+            <td>du</td>
+            <td>du</td>
+        </tr>
+        <tr>
+            <td>trys</td>
+            <td>trys</td>
+            <td>trys</td>
+        </tr>
+    </table>
+    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+    <hr>
+    <p>Donec id mi sed orci lobortis rutrum. Nam suscipit augue eu felis congue malesuada. In dui dolor, ultrices ut dictum non, mollis at sapien.</p>
+    <div>
+        <p>Integer auctor magna et orci iaculis maximus. Quisque euismod lectus quam, eget fringilla nulla ornare a. In hac habitasse platea dictumst. Proin venenatis pretium tincidunt. Morbi rhoncus vel neque vel porttitor.</p>
+        <p>Sed id dolor quis mauris iaculis varius. Curabitur a nulla nec tortor cursus fringilla a et neque. Phasellus ligula velit, vestibulum ac dui sed, lacinia euismod mi.</p>
+        <p>Sed id dolor quis mauris iaculis varius. Curabitur a nulla nec tortor cursus fringilla a et neque. Phasellus ligula velit, vestibulum ac dui sed, lacinia euismod mi.</p>
+        <p>Sed id dolor quis mauris iaculis varius. Curabitur a nulla nec tortor cursus fringilla a et neque. Phasellus ligula velit, vestibulum ac dui sed, lacinia euismod mi.</p>
+    </div>
+    <h2>Mauris id faucibus elit, a efficitur sem</h2>
+    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+    <hr>
+    <p>Donec id mi sed orci lobortis rutrum. Nam suscipit augue eu felis congue malesuada. In dui dolor, ultrices ut dictum non, mollis at sapien.</p>
+    <div>
+        <p onclick="test()">Integer auctor magna et orci iaculis maximus. Quisque euismod lectus quam, eget fringilla nulla ornare a. In hac habitasse platea dictumst. Proin venenatis pretium tincidunt. Morbi rhoncus vel neque vel porttitor.</p>
+        <p>Sed id dolor quis mauris iaculis varius. Curabitur a nulla nec tortor cursus fringilla a et neque. Phasellus ligula velit, vestibulum ac dui sed, lacinia euismod mi.</p>
+        <p>Sed id dolor quis mauris iaculis varius. Curabitur a nulla nec tortor cursus fringilla a et neque. Phasellus ligula velit, vestibulum ac dui sed, lacinia euismod mi.</p>
+        <p>Sed id dolor quis mauris iaculis varius. Curabitur a nulla nec tortor cursus fringilla a et neque. Phasellus ligula velit, vestibulum ac dui sed, lacinia euismod mi.</p>
+    </div>
+    <h2>Mauris id faucibus elit, a efficitur sem</h2>
+    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+    <hr>
+    <p>Donec id mi sed orci lobortis rutrum. Nam suscipit augue eu felis congue malesuada. In dui dolor, ultrices ut dictum non, mollis at sapien.</p>
+    <div>
+        <p>Integer auctor magna et orci iaculis maximus. Quisque euismod lectus quam, eget fringilla nulla ornare a. In hac habitasse platea dictumst. Proin venenatis pretium tincidunt. Morbi rhoncus vel neque vel porttitor.</p>
+        <p>Sed id dolor quis mauris iaculis varius. Curabitur a nulla nec tortor cursus fringilla a et neque. Phasellus ligula velit, vestibulum ac dui sed, lacinia euismod mi.</p>
+        <p>Sed id dolor quis mauris iaculis varius. Curabitur a nulla nec tortor cursus fringilla a et neque. Phasellus ligula velit, vestibulum ac dui sed, lacinia euismod mi.</p>
+        <p>Sed id dolor quis mauris iaculis varius. Curabitur a nulla nec tortor cursus fringilla a et neque. Phasellus ligula velit, vestibulum ac dui sed, lacinia euismod mi.</p>
+    </div>
+    <h2>Mauris id faucibus elit, a efficitur sem</h2>
+
+    <script>
+
+//document.getElementByID("superDiv");
+var kiekP = document.getElementsByTagName("p").length;
+//document.getElementsByClassName("klasesPavadinimas")[1];
+console.log(kiekP);
+
+var newParagraph = document.createElement("p");
+document.getElementById("superDiv").appendChild(newParagraph);
+//newParagraph.textContent = "as esu naujas paragrafas";
+newParagraph.innerHTML = "<span>as esu naujas span</span>";
+var pirmasP = document.getElementsByTagName("p")[0];
+document.body.insertBefore(newParagraph, pirmasP);
+
+var parent = document.getElementById("superDiv");
+var child = document.getElementById("child");
+parent.replaceChild(newParagraph, child);
+
+var allTr = document.getElementsByTagName("tr");
+var newTd;
+for(var i = 0; i < allTr.length; i++){
+  newTd = document.createElement("td");
+  newTd.textContent = i;
+  allTr[i].appendChild(newTd);
+}
+
+/*document.getElementsByTagName("h1")[0].style.fontSize = "25px";
+
+var paragrafai = document.getElementsByTagName("p");
+for (var i = 0; i < paragrafai.length; i++) {
+  paragrafai[i].style.color = "#2222ff";
+}
+
+paragrafai[1].classList.add("naujaKlase");
+var pirmas = document.getElementsByClassName("naujaKlase")[0];
+pirmas.id = "naujasId"
+/*setTimeout(function() {
+  paragrafai[1].classList.remove("naujaKlase");
+}, 4000) */
+
+/*setInterval(function() {
+  paragrafai[1].classList.toggle("naujaKlase");
+}, 4000)
+
+document.getElementById("linkas").setAttribute("href","http://www.google.com");
+document.getElementById("linkas").setAttribute("target","_blank");
+document.getElementsByTagName("img")[3].setAttribute("src","https://pixabay.com/static/uploads/photo/2016/09/03/21/47/kids-chocolate-1642807_960_720.jpg"); */
+
+var spalvos = ["naujaKlaseG","naujaKlaseZ","naujaKlaseR"];
+var i = 0;
+setInterval(function() {
+  document.getElementsByTagName("p")[6].className = spalvos[i];
+  i++;
+  if (i > spalvos.length -1){
+    i = 0;
+  }
+}, 2000);
+
+var kuriamTagus = function(tag,text){
+  var element = document.createElement(tag);
+  var container = document.getElementsByTagName("body")[0];
+  container.appendChild(element);
+  element.textContent = text;
+}
+kuriamTagus("h1","tekstasssssssssssssssssssss");
+kuriamTagus("p","tekstaswwwwwwwwwwwwwwwwwwwwww");
+kuriamTagus("h5","tekstasaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+
+var imgTag = function(tag,source){
+  var pav = document.createElement(tag);
+  var cont = document.getElementsByTagName("body")[0];
+  cont.appendChild(pav);
+  pav.setAttribute("src",source);
+}
+imgTag("img","https://pixabay.com/static/uploads/photo/2016/09/03/21/47/kids-chocolate-1642807_960_720.jpg");
+
+var paveiksleliai = document.getElementsByTagName("img");
+if(paveiksleliai.length > 2){
+  for (var i=0; i < paveiksleliai.length; i+=2){
+    paveiksleliai[i].style.border = "7px solid #005555";
+  }
+} else {
+  var newImage = document.createElement("img");
+  newImage.setAttribute("src","https://pixabay.com/static/uploads/photo/2016/09/03/21/47/kids-chocolate-1642807_960_720.jpg");
+  newImage.setAttribute("alt","kiausinis");
+  document.getElementById("superDiv").appendChild(newImage);
+}
+
+////////////////////////////////-E-V-E-N-T-S-//////////////////////////////////
+
+//window.onload() = funtion(){}
+window.addEventListener("DOMContentLoaded", function() {
+
+window.addEventListener("scroll", function() {
+  document.getElementById("toolbar").style.top = Math.max(200, window.scrollY) + "px";
+  //console.log(window.scrollY);
+})
+window.addEventListener("resize", function() {
+  document.getElementById("headerImg").style.height = window.innerHeight - 170 + "px";
+  //console.log(window.innerHeight);
+})
+// function test(){
+//   alert("test");
+// }
+})
+
+document.getElementsByTagName("button")[0].addEventListener("mouseleave", function(){
+  alert("I moved out");
+});
+
+document.addEventListener("keydown", function(event){
+  //console.log(event.keyCode);
+  if (event.keyCode == 65) {
+    document.body.style.backgroundColor = "green";
+  }
+},false);
+document.addEventListener("keyup", function(event){
+  //console.log(event.keyCode);
+  if (event.keyCode == 65) {
+    document.body.style.backgroundColor = "";
+  }
+});
+//event.preventDefault();
+
+$(document).ready(function(){
+
+  $("#toolbar").click(function(){
+    $("#toolbar").fadeOut(3000);
+  })
+  $("button").click(function(){
+    $("#toolbar").fadeToggle(3000);
+  })
+})
+
+window.onload = function() {
+  Particles.init({
+selector: '#myCanvas',
+color: '#0f9976',
+connectParticles: true,
+speed: 4,
+maxParticles: 300
+});
+};
+
+
+
+
+
+    </script>
+</body>
+
+</html>
