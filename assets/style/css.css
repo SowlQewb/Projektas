@@ -1,14 +1,20 @@
 body, html {
   margin: 0;
   padding: 0;
+  background: #efefef url("../images/fonas2.jpg") no-repeat fixed top right;
+  background-size: cover;
+  font-family: 'Trirong', serif;
+  z-index: 1;
 }
 .titulinis {
-  height: 300px;
   width: 100%;
   margin: 0;
   padding: 0;
   background: #efefef url("../images/fonas.jpg") no-repeat fixed top right;
   background-size: cover;
+  z-index: 2;
+  color: white;
+  font-family: 'Trirong', serif;
 }
 .logo {
   margin: 10px;
@@ -19,6 +25,8 @@ body, html {
 }
 nav {
   float: right;
+  padding-top: 15px;
+  font-family: 'Trirong', serif;
 }
 .meniu li {
   margin: 5px;
@@ -29,30 +37,45 @@ nav {
   font-size: 18px;
 }
 .pavadinimas {
+  padding-top: 15px;
 }
 .apie {
+  padding-top: 50px;
+  padding-bottom: 20px;
   margin: 5px;
   justify-content: center;
   font-size: 18px;
-  font-family: sans-serif;
 }
 
-#darbai div {
+#darbai {
   margin: 5px;
   position: relative;
   height: auto;
   width: auto;
   display: inline-block;
+  color: white;
 }
 h1, nav ul {
   margin: 0;
 }
-#faktai {
+#faktai, #kontaktai, .rekvizitai {
   margin: 5px;
+  color: white;
 }
-#kontaktai {
+.slider {
   margin: 5px;
+  max-width: 100%;
+
 }
-.rekvizitai {
-  margin: 5px;
+.slick-slide {
+  outline: none;
 }
+.slick-next, .slick-prev {
+  display: none !important;
+}
+.top {
+  overflow: hidden;
+}
+textarea {
+    font-family: Arial, monospace;
+  }
